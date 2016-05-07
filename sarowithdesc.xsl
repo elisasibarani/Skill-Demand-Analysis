@@ -9,8 +9,8 @@
 	<!ENTITY saro "http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#">
 ]>
 
-<stylesheet xmlns="http://www.w3.org/1999/XSL/Transform" 
-    xmlns:krextor="http://kwarc.info/projects/krextor"
+<stylesheet xmlns="http://www.w3.org/1999/XSL/Transform"
+	xmlns:krextor="http://kwarc.info/projects/krextor"
     xmlns:krextor-genuri="http://kwarc.info/projects/krextor/genuri"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:xd="http://www.pnp-software.com/XSLTdoc"
@@ -31,7 +31,29 @@
 
     <!--<strip-space elements="*"/>
 	-->
-		
+	
+	<template match="krextor-genuri:saro-uri" as="xs:anyURI?">
+      <param name="node"/>
+      <param name="base-uri"/>
+      <apply-templates select="$node" mode="krextor-genuri:saro-uri">
+        <with-param name="saro-base-uri" select="$base-uri"/>
+      </apply-templates>
+    </template>
+
+    <template match="Value" mode="krextor-genuri:saro-uri" as="xs:anyURI?">
+      <param name="saro-base-uri"/>
+      <sequence select="$saro-base-uri"/>
+    </template>
+
+    <template match="Value" mode="krextor-genuri:saro-uri" as="xs:anyURI?">
+      <param name="saro-base-uri"/>
+      <sequence select="xs:anyURI(
+                            concat(
+                            $saro-base-uri,
+                            @id))"/>
+    </template>
+	
+			
     <template match="//GateDocumentFeatures/Feature/Value" mode="krextor:main">
 
         <call-template name="krextor:create-resource">
@@ -85,27 +107,26 @@
 	</template>	
 	
 	
-	<variable name="startprod" select="//Annotation[@Type='SkillProduct']/@StartNode"/>
-		
+	
 	<!--<template match="//Annotation[@Type='SkillProduct']/Feature/Value" mode="krextor:main">-->
-	<template match="//text()[following-sibling::Annotation[@Type='SkillProduct']/Feature[Name='string']]" mode="krextor:main">
+	<template match="//Annotation[@Type='SkillProduct']/Feature[Name='string']/Value" mode="krextor:main">
 		<call-template name="krextor:create-resource">
 			<with-param name="type" select="'&saro;Product'"/>
 			<with-param name="properties">
-				<krextor:property uri="&saro;frequencyOfMention" value="{$startprod}"/>
+				<variable name="id" select="//Annotation[@Type='SkillProduct']/@Id"/>
+				<krextor:property uri="&saro;frequencyOfMention" value="{//Annotation[@Id=$id]/Feature[Name='frequencyOfMention']/Value}"/>
 			</with-param>
 		</call-template>
 	</template>
 	
 	
-	<variable name="starttool" select="//Annotation[@Type='SkillTool']/@StartNode"/>
 		
-	<template match="//text()[preceding-sibling::Node[@id=$starttool]][1]" mode="krextor:main">
+	<template match="//Annotation[@Type='SkillTool']/Feature[Name='string']/Value" mode="krextor:main">
 		<call-template name="krextor:create-resource">
 			<with-param name="type" select="'&saro;Tool'"/>
 			<with-param name="properties">
-				<variable name="product"> <value-of select="text()[preceding-sibling::Node[@id=$starttool]][1]"/> </variable>
-				<krextor:property uri="&saro;frequencyOfMention" value="{$starttool}"/>
+				<variable name="id" select="//Annotation[@Type='SkillTool']/@Id"/>
+				<krextor:property uri="&saro;frequencyOfMention" value="{//Annotation[@Id=$id]/Feature[Name='frequencyOfMention']/Value}"/>
 			</with-param>
 		</call-template>
 	</template>
