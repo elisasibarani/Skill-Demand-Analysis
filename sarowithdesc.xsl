@@ -109,29 +109,32 @@
 
 	
 	
-	<!--<template match="//Annotation[@Type='SkillProduct']/Feature/Value" mode="krextor:main">-->
 	<template match="//Annotation[@Type='SkillProduct']/Feature[Name='string']/Value" mode="krextor:main">
 		<variable name="id" select="//Annotation[@Type='SkillProduct']/@Id"/>
+		<variable name="freq" select="//Annotation[@Id=$id]/Feature[Name='frequencyOfMention']/Value"/>
+		
+			<call-template name="create-skill-resource">
+				<with-param name="id1" select="$id" tunnel="yes"/>
+				<with-param name="freq1" select="$freq" tunnel="yes"/>
+			</call-template>
+	</template>
+	
+
+	<template name="create-skill-resource">
+		<param name="id1" tunnel="yes"/>
+		<param name="freq1" tunnel="yes"/>
+		
 		<call-template name="krextor:create-resource">
 			<with-param name="type" select="'&saro;Product'"/>
+			<with-param name="properties">
+				<krextor:property uri="&saro;frequencyOfMention" value="{$freq1}"/>
+			</with-param>
 		</call-template>	
 		
-		<apply-templates>
-			<with-param name="id1" select="$id" tunnel="yes"/>
 			<!--<krextor:property uri="&saro;frequencyOfMention" value="{//Annotation[@Id=$id]/Feature[Name='frequencyOfMention']/Value}"/>-->
-		</apply-templates>
 	</template>
 	
-	<template match="//Annotation[@Type='SkillProduct']/Feature[Name='frequencyOfMention']/Value" mode="krextor-main">
-		<param name="id1" tunnel="yes"/>
-		<value-of select="//Annotation[@Id=$id1]/Feature[Name='frequencyOfMention']/Value"/>
-		<call-template name="krextor:add-literal-property">
-			<with-param name="property" select="'&saro;frequencyOfMention'"/>
-		</call-template>
-	</template>
-	
-	
-	
+
 		
 	<template match="//Annotation[@Type='SkillTool']/Feature[Name='string']/Value" mode="krextor:main">
 		<call-template name="krextor:create-resource">
