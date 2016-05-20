@@ -35,26 +35,15 @@
 	<template match="krextor-genuri:saro" as="xs:anyURI?">
       <param name="node" as="node()"/>
       <param name="base-uri" as="xs:anyURI"/>
+	  
       <apply-templates select="$node" mode="krextor-genuri:saro">
-        <with-param name="saro-base-uri" select="$base-uri"/>
+        <with-param name="saro-base-uri" select="concat('krextor-genuri:', $base-uri)"/>
       </apply-templates>
     </template>
-
-    <!--<template match="//GateDocumentFeatures/Feature/Value" mode="krextor-genuri:saro" as="xs:anyURI?">
-      <param name="saro-base-uri"/>
-      <sequence select="$saro-base-uri"/>
-    </template>
-
-    <template match="//Annotation/Feature/Value" mode="krextor-genuri:saro" as="xs:anyURI?">
-      <param name="saro-base-uri"/>
-      <sequence select="xs:anyURI(
-                            concat(
-                            $saro-base-uri,
-                            @Id))"/>
-    </template>
-	-->
-
 	
+	
+	
+
 	<!--Fail to generate a XLIFF compliant URI for all elements for which none is specified, i.e. all elements except //GateDocumentFeatures/Feature/Value  and //Annotation/Feature/Value 
     <template match="*" mode="krextor-genuri:saro" as="xs:anyURI?"/> -->
     
@@ -130,14 +119,22 @@
 
 	<template match="//Annotation[@Type='SkillProduct']/Feature[Name='string']/Value" mode="krextor:main">
 		
-		<variable name="id" select="//Annotation[@Type='SkillProduct']/@Id"/>
-		<variable name="freq" select="//Annotation[@Id=$id]/Feature[Name='frequencyOfMention']/Value"/>
+		<variable name="id" select="ancestor::Annotation[1]/@Id"/>
+		<!--<variable name="id" select="//Annotation[@Type='SkillTool']/@Id"/>
+		<variable name="freq" select="//Annotation[@Id=$id]/Feature[Name='frequencyOfMention']/Value"/>-->
+		<variable name="freq" select="ancestor::Annotation/Feature[Name='frequencyOfMention']/Value"/>
 		
-			<call-template name="create-skill-resource">
+			<!--<call-template name="create-skill-resource">
 				<with-param name="id1" select="$id" tunnel="yes"/>
 				<with-param name="freq1" select="$freq" tunnel="yes"/>
-			</call-template>
+			</call-template>-->
 		
+		<call-template name="krextor:create-resource">
+			<with-param name="type" select="'&saro;Product'"/>
+			<with-param name="properties">
+				<krextor:property uri="&saro;frequencyOfMention" value="{$freq}"/>
+			</with-param>
+		</call-template>	
 	</template>
 	
 
@@ -149,25 +146,18 @@
 			<with-param name="type" select="'&saro;Product'"/>
 			<with-param name="properties">
 				<krextor:property uri="&saro;frequencyOfMention" value="{$freq1}"/>
-				
 			</with-param>
 		</call-template>	
-		
-			
 	</template>
-	
-
-	
-	
 	
 	
 	<template match="//Annotation[@Type='SkillTool']/Feature[Name='string']/Value" mode="krextor:main">
-	
+		<variable name="id" select="ancestor::Annotation[1]/@Id"/>
+		<variable name="freq" select="ancestor::Annotation/Feature[Name='frequencyOfMention']/Value"/>
 		<call-template name="krextor:create-resource">
 			<with-param name="type" select="'&saro;Tool'"/>
 			<with-param name="properties">
-				<variable name="id" select="//Annotation[@Type='SkillTool']/@Id"/>
-				<krextor:property uri="&saro;frequencyOfMention" value="{//Annotation[@Id=$id]/Feature[Name='frequencyOfMention']/Value}"/>
+				<krextor:property uri="&saro;frequencyOfMention" value="{$freq}"/>
 			</with-param>
 		</call-template>
 	</template>
