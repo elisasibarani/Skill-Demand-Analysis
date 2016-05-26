@@ -10,7 +10,7 @@
 </GateDocumentFeatures>
 <!-- The document content area with serialized nodes -->
 
-<TextWithNodes>**Database and ETL Consultant - BODS, <Node id="38"/>SQL<Node id="41"/> Server**
+<TextWithNodes>**Database and ETL Consultant - BODS, SQL Server**
 
 **Business Objects Data Services, BODS, ETL, Support, Developer**
 
@@ -18,7 +18,7 @@ A Database developer with Business Objects Data Services is needed for a hands
 on role at a well established BI specialist. This is the perfect role for
 someone with two or more years of experience in BODS support or development
 experience who wants some excellent access to some of the best industry
-training for SSIS/SAP HANA/<Node id="447"/>Hadoop<Node id="453"/>. This company works with blue chip
+training for SSIS/SAP HANA/Hadoop. This company works with blue chip
 organisations across the UK but very minimal travel is required
 
 As a Database and ETL consultant (SQL Server, BODS) you will develop and
@@ -29,7 +29,7 @@ processes.
 Key skills
 
   * **Business Objects Data Services/BODS - 2 years +**
-  * **SQL Server - stored procedures, functions, views**
+  * **<Node id="868"/>SQL<Node id="871"/> Server - stored procedures, functions, views**
   * Degree educated 
   * Excellent communication skills 
   * Understanding of SDLC
@@ -38,7 +38,7 @@ Desirable skills
 
   * SSIS 
   * SAP Hana 
-  * Hadoop
+  * <Node id="1049"/>Hadoop<Node id="1055"/>
   *<Node id="1059"/>MongoDB<Node id="1066"/>
 
 This role will be fast paced and challenging and will be around 60% support
@@ -59,70 +59,21 @@ applications from persons of any age for this role. <Node id="2034"/>Database an
 <!-- The default annotation set -->
 
 <AnnotationSet>
-<Annotation Id="2" Type="title" StartNode="2034" EndNode="2080">
-</Annotation>
-<Annotation Id="6" Type="jobLocation" StartNode="2122" EndNode="2136">
-</Annotation>
-<Annotation Id="8" Type="hiringOrganization" StartNode="2154" EndNode="2169">
+</AnnotationSet>
+
+<!-- Named annotation set -->
+
+<AnnotationSet Name="GATE Document_00009">
+<Annotation Id="896" Type="datePosted" StartNode="2170" EndNode="2189">
+<Feature>
+  <Name className="java.lang.String">rule</Name>
+  <Value className="java.lang.String">PostingDate</Value>
+</Feature>
 </Annotation>
 <Annotation Id="52" Type="Split" StartNode="2189" EndNode="2189">
 <Feature>
   <Name className="java.lang.String">kind</Name>
   <Value className="java.lang.String">external</Value>
-</Feature>
-</Annotation>
-<Annotation Id="909" Type="SkillTool" StartNode="38" EndNode="41">
-<Feature>
-  <Name className="java.lang.String">frequencyOfMention</Name>
-  <Value className="java.lang.Integer">3</Value>
-</Feature>
-<Feature>
-  <Name className="java.lang.String">kind</Name>
-  <Value className="java.lang.String">tool</Value>
-</Feature>
-<Feature>
-  <Name className="java.lang.String">string</Name>
-  <Value className="java.lang.String">SQL</Value>
-</Feature>
-</Annotation>
-<Annotation Id="908" Type="SkillProduct" StartNode="447" EndNode="453">
-<Feature>
-  <Name className="java.lang.String">frequencyOfMention</Name>
-  <Value className="java.lang.Integer">2</Value>
-</Feature>
-<Feature>
-  <Name className="java.lang.String">kind</Name>
-  <Value className="java.lang.String">product</Value>
-</Feature>
-<Feature>
-  <Name className="java.lang.String">string</Name>
-  <Value className="java.lang.String">Hadoop</Value>
-</Feature>
-</Annotation>
-<Annotation Id="907" Type="SkillProduct" StartNode="1059" EndNode="1066">
-<Feature>
-  <Name className="java.lang.String">frequencyOfMention</Name>
-  <Value className="java.lang.Integer">1</Value>
-</Feature>
-<Feature>
-  <Name className="java.lang.String">kind</Name>
-  <Value className="java.lang.String">product</Value>
-</Feature>
-<Feature>
-  <Name className="java.lang.String">string</Name>
-  <Value className="java.lang.String">MongoDB</Value>
-</Feature>
-</Annotation>
-<Annotation Id="906" Type="Organization" StartNode="2154" EndNode="2169">
-<Feature>
-  <Name className="java.lang.String">rule</Name>
-  <Value className="java.lang.String">FindOrganization</Value>
-</Feature>
-</Annotation>
-<Annotation Id="905" Type="jobRole" StartNode="2034" EndNode="2080">
-<Feature>
-  <Name className="java.lang.String">rule</Name>
-  <Value className="java.lang.String">FindingRole</Value>
 </Feature>
 </Annotation>
 <Annotation Id="904" Type="Location" StartNode="2122" EndNode="2136">
@@ -131,17 +82,60 @@ applications from persons of any age for this role. <Node id="2034"/>Database an
   <Value className="java.lang.String">FindLocation</Value>
 </Feature>
 </Annotation>
-<Annotation Id="896" Type="datePosted" StartNode="2170" EndNode="2189">
+<Annotation Id="905" Type="jobRole" StartNode="2034" EndNode="2080">
 <Feature>
   <Name className="java.lang.String">rule</Name>
-  <Value className="java.lang.String">PostingDate</Value>
+  <Value className="java.lang.String">FindingRole</Value>
 </Feature>
 </Annotation>
-</AnnotationSet>
-
-<!-- Named annotation set -->
-
-<AnnotationSet Name="Original markups">
+<Annotation Id="906" Type="Organization" StartNode="2154" EndNode="2169">
+<Feature>
+  <Name className="java.lang.String">rule</Name>
+  <Value className="java.lang.String">FindOrganization</Value>
+</Feature>
+</Annotation>
+<Annotation Id="907" Type="SkillProduct" StartNode="1049" EndNode="1055">
+<Feature>
+  <Name className="java.lang.String">string</Name>
+  <Value className="java.lang.String">Hadoop</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">frequencyOfMention</Name>
+  <Value className="java.lang.Integer">2</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">product</Value>
+</Feature>
+</Annotation>
+<Annotation Id="908" Type="SkillProduct" StartNode="1059" EndNode="1066">
+<Feature>
+  <Name className="java.lang.String">string</Name>
+  <Value className="java.lang.String">MongoDB</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">frequencyOfMention</Name>
+  <Value className="java.lang.Integer">1</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">product</Value>
+</Feature>
+</Annotation>
+<Annotation Id="909" Type="SkillTool" StartNode="868" EndNode="871">
+<Feature>
+  <Name className="java.lang.String">string</Name>
+  <Value className="java.lang.String">SQL</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">frequencyOfMention</Name>
+  <Value className="java.lang.Integer">3</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">tool</Value>
+</Feature>
+</Annotation>
 </AnnotationSet>
 
 </GateDocument>

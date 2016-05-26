@@ -1,0 +1,17 @@
+<file:/C:/Users/elisa%20sibarani/Database%20and%20ETL%20Consultant%20-%20BODS,%20SQL%20Server>
+	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#JobRole> .
+<file:/C:/Users/elisa%20sibarani/Document_00009withDocFeatures.xml>
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#describes>	<file:/C:/Users/elisa%20sibarani/Database%20and%20ETL%20Consultant%20-%20BODS,%20SQL%20Server> ;
+	<http://schema.org/jobLocation>	<file:/C:/Users/elisa%20sibarani/Manchester,%20UK> ;
+	<http://schema.org/hiringOrganization>	<file:/C:/Users/elisa%20sibarani/Venturi%20Limited> ;
+	<http://schema.org/datePosted>	"2014-07-08 02:49:39" ;
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#requiresSkill>	<file:/C:/Users/elisa%20sibarani/Document_00009withDocFeatures.xml>, <file:/C:/Users/elisa%20sibarani/Document_00009withDocFeatures.xml>, <file:/C:/Users/elisa%20sibarani/Document_00009withDocFeatures.xml> .
+<file:/C:/Users/elisa%20sibarani/Hadoop>
+	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Product> ;
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#frequencyOfMention>	"2" .
+<file:/C:/Users/elisa%20sibarani/MongoDB>
+	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Product> ;
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#frequencyOfMention>	"1" .
+<file:/C:/Users/elisa%20sibarani/SQL>
+	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Tool> ;
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#frequencyOfMention>	"3" .

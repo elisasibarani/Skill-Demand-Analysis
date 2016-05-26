@@ -1,12 +1,12 @@
 <http://www.edsa-project.eu/jobposting/GATE%20Document_00009>
 	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#JobPosting> ;
-	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#describes>	"Database and ETL Consultant - BODS, SQL Server" ;
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#describes>	<http://www.edsa-project.eu/jobposting/GATE%20Document_00009/Database%20and%20ETL%20Consultant%20-%20BODS,%20SQL%20Server> ;
 	<http://schema.org/jobLocation>	"Manchester, UK" ;
 	<http://schema.org/hiringOrganization>	"Venturi Limited" ;
 	<http://schema.org/datePosted>	"2014-07-08 02:49:39" .
 <http://www.edsa-project.eu/jobposting/GATE%20Document_00009/Database%20and%20ETL%20Consultant%20-%20BODS,%20SQL%20Server>
 	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#JobRole> ;
-	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#requiresSkill>	"SQL", "Hadoop", "MongoDB" .
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#requiresSkill>	<http://www.edsa-project.eu/jobposting/GATE%20Document_00009/SQL>, <http://www.edsa-project.eu/jobposting/GATE%20Document_00009/Hadoop>, <http://www.edsa-project.eu/jobposting/GATE%20Document_00009/MongoDB>  .
 <http://www.edsa-project.eu/jobposting/GATE%20Document_00009/SQL>
 	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Tool> ;
 	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#frequencyOfMention>	"3" .
