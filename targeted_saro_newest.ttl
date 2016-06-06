@@ -1,0 +1,24 @@
+<http://www.edsa-project.eu/jobposting/GATE%20Document_00009>
+	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#JobPosting> ;
+	<http://schema.org/jobLocation>	<file:/C:/Users/elisa%20sibarani/SARO/South%20East%20London,%20London> ;
+	<http://schema.org/datePosted>	"2015-11-17T15:51:19+00:00" ;
+	<http://schema.org/hiringOrganization>	<file:/C:/Users/elisa%20sibarani/SARO/Blue%20Pelican> ;
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#describes>	<http://www.edsa-project.eu/jobposting/GATE%20Document_00009/Senior%20Insight%20Analyst> .
+<http://www.edsa-project.eu/jobposting/GATE%20Document_00009/Senior%20Insight%20Analyst>
+	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#JobRole> ;
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#requiresSkill>	<http://www.edsa-project.eu/jobposting/GATE%20Document_00009/SQL>, <http://www.edsa-project.eu/jobposting/GATE%20Document_00009/Analytic>, <http://www.edsa-project.eu/jobposting/GATE%20Document_00009/Marketing>, <http://www.edsa-project.eu/jobposting/GATE%20Document_00009/BusinessAnalytic>, <http://www.edsa-project.eu/jobposting/GATE%20Document_00009/StatisticalAnalysis> .
+<http://www.edsa-project.eu/jobposting/GATE%20Document_00009/SQL>
+	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Tool> ;
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#frequencyOfMention>	"1" .
+<http://www.edsa-project.eu/jobposting/GATE%20Document_00009/Analytic>
+	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Topic> ;
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#frequencyOfMention>	"3" .
+<http://www.edsa-project.eu/jobposting/GATE%20Document_00009/Marketing>
+	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Topic> ;
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#frequencyOfMention>	"4" .
+<http://www.edsa-project.eu/jobposting/GATE%20Document_00009/BusinessAnalytic>
+	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Topic> ;
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#frequencyOfMention>	"1" .
+<http://www.edsa-project.eu/jobposting/GATE%20Document_00009/StatisticalAnalysis>
+	a	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#Topic> ;
+	<http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#frequencyOfMention>	"1" .

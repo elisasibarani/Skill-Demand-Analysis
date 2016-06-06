@@ -3,59 +3,30 @@
 <!-- The document's features-->
 
 <GateDocumentFeatures>
-<Feature>
-  <Name className="java.lang.String">Filename</Name>
-  <Value className="java.lang.String">GATE Document_00009</Value>
-</Feature>
 </GateDocumentFeatures>
 <!-- The document content area with serialized nodes -->
 
-<TextWithNodes>**Database and ETL Consultant - BODS, SQL Server**
+<TextWithNodes>
 
-**Business Objects Data Services, BODS, ETL, Support, Developer**
 
-A Database developer with Business Objects Data Services is needed for a hands
-on role at a well established BI specialist. This is the perfect role for
-someone with two or more years of experience in BODS support or development
-experience who wants some excellent access to some of the best industry
-training for SSIS/SAP HANA/Hadoop. This company works with blue chip
-organisations across the UK but very minimal travel is required
 
-As a Database and ETL consultant (SQL Server, BODS) you will develop and
-maintain solutions that support online reporting and business applications.
-Using Business Objects Data Services you will design, develop and maintain ETL
-processes.
 
-Key skills
+<Node id="5"/>South East London, London<Node id="30"/>
+<Node id="31"/>2015-11-17T15:51:19+00:00<Node id="56"/>
+Adzuna
+<Node id="64"/>Blue Pelican<Node id="76"/>
+<Node id="77"/>Senior Insight Analyst<Node id="99"/>
 
-  * **Business Objects Data Services/BODS - 2 years +**
-  * **<Node id="868"/>SQL<Node id="871"/> Server - stored procedures, functions, views**
-  * Degree educated 
-  * Excellent communication skills 
-  * Understanding of SDLC
 
-Desirable skills
 
-  * SSIS 
-  * SAP Hana 
-  * <Node id="1049"/>Hadoop<Node id="1055"/>
-  *<Node id="1059"/>MongoDB<Node id="1066"/>
 
-This role will be fast paced and challenging and will be around 60% support
-and 40% development. It would suit someone who wants to work with prestigious
-clients and train on the latest Big Data/Analytics technologies with the view
-to progressing their career in full development/consultancy.
 
-This role can pay up to £42k + Benefits and Bonus. Please send an updated CV
 
-Venturi is a staffing business dedicated to you, differentiating ourselves in
-the marketplace by quality of service and candidate delivery. Our highly
-skilled and experienced staff operate within dedicated markets to give you the
-best service possible. Venturi markets include Development &amp; Design, Business
-Intelligence, IT &amp; Infrastructure Support. Venturi operates as an employment
-agency and employment business. No terminology in this advert is intended to
-discriminate on the grounds of age, and we confirm that we are happy to accept
-applications from persons of any age for this role. <Node id="2034"/>Database and ETL Consultant - BODS, SQL Server<Node id="2080"/> Permanent jobserveEu 2014-07-14 02:54:21 <Node id="2122"/>Manchester, UK<Node id="2136"/> A59A906502EEE3B5 <Node id="2154"/>Venturi Limited<Node id="2169"/> <Node id="2170"/>2014-07-08 02:49:39<Node id="2189"/></TextWithNodes>
+Senior Insight Analyst CLIENT I'm seeking an experienced Senior Customer Insight Analyst, to join this large creative communications agency situated in the heart of trendy North London. It's an integral position, working with one large global retail client delivering in depth analytics and actionable insightful reports. *Stable, large scale business with stable clients *Urgent vacancy, within interview slots available before Christmas - secure a new job now to start next year! *Excellent opportunity for an experienced analyst looking to gain integrated data and <Node id="674"/>analytics<Node id="683"/> exposure - large scale projects and well known agency name This working environment will suit an ambitious, forward thinking, confident individual, not afraid to ask questions or make creative suggestions. You will be working amongst some of the agency industry's lead minds on technology driven <Node id="980"/>marketing<Node id="989"/>, analytics and loyalty marketing. EXPERIENCE REQUIRED/RESPONSIBILITES *Educated to degree level in a numerate subject *Strong experience in marketing or <Node id="1143"/>business analytics<Node id="1161"/> environment *Proven, commercial experience in <Node id="1208"/>statistical analysis<Node id="1228"/>, predictive modelling and segmentation *Must be a strong user of SAS Base and <Node id="1307"/>SQL<Node id="1310"/> for data manipulation and statistical modelling development, plus significant experience with Excel including programming elements *Competent present of actionable insights, and experience of working with large customer data sets (into the millions) POSITION - Senior Insight Analyst LOCATION - North London SALARY - ?50k - ?55k plus excellent benefits TO APPLY For further information or to apply please contact: Kate McDermott Managing Consultant - Blue Pelican Marketing For more vacancies which may suit your needs, please visit us at
+
+
+
+<Node id="1853"/></TextWithNodes>
 <!-- The default annotation set -->
 
 <AnnotationSet>
@@ -64,54 +35,40 @@ applications from persons of any age for this role. <Node id="2034"/>Database an
 <!-- Named annotation set -->
 
 <AnnotationSet Name="GATE Document_00009">
-<Annotation Id="896" Type="datePosted" StartNode="2170" EndNode="2189">
-<Feature>
-  <Name className="java.lang.String">rule</Name>
-  <Value className="java.lang.String">PostingDate</Value>
-</Feature>
-</Annotation>
-<Annotation Id="52" Type="Split" StartNode="2189" EndNode="2189">
+<Annotation Id="36" Type="Split" StartNode="1853" EndNode="1853">
 <Feature>
   <Name className="java.lang.String">kind</Name>
   <Value className="java.lang.String">external</Value>
 </Feature>
 </Annotation>
-<Annotation Id="904" Type="Location" StartNode="2122" EndNode="2136">
-<Feature>
-  <Name className="java.lang.String">rule</Name>
-  <Value className="java.lang.String">FindLocation</Value>
-</Feature>
-</Annotation>
-<Annotation Id="905" Type="jobRole" StartNode="2034" EndNode="2080">
-<Feature>
-  <Name className="java.lang.String">rule</Name>
-  <Value className="java.lang.String">FindingRole</Value>
-</Feature>
-</Annotation>
-<Annotation Id="906" Type="Organization" StartNode="2154" EndNode="2169">
-<Feature>
-  <Name className="java.lang.String">rule</Name>
-  <Value className="java.lang.String">FindOrganization</Value>
-</Feature>
-</Annotation>
-<Annotation Id="907" Type="SkillProduct" StartNode="1049" EndNode="1055">
-<Feature>
-  <Name className="java.lang.String">string</Name>
-  <Value className="java.lang.String">Hadoop</Value>
-</Feature>
-<Feature>
-  <Name className="java.lang.String">frequencyOfMention</Name>
-  <Value className="java.lang.Integer">2</Value>
-</Feature>
+<Annotation Id="679" Type="datePosted" StartNode="31" EndNode="56">
 <Feature>
   <Name className="java.lang.String">kind</Name>
-  <Value className="java.lang.String">product</Value>
+  <Value className="java.lang.String">datePosted</Value>
 </Feature>
 </Annotation>
-<Annotation Id="908" Type="SkillProduct" StartNode="1059" EndNode="1066">
+<Annotation Id="680" Type="Location" StartNode="5" EndNode="30">
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">jobLocation</Value>
+</Feature>
+</Annotation>
+<Annotation Id="681" Type="jobRole" StartNode="77" EndNode="99">
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">jobTitle</Value>
+</Feature>
+</Annotation>
+<Annotation Id="682" Type="Organization" StartNode="64" EndNode="76">
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">hiringOrganization</Value>
+</Feature>
+</Annotation>
+<Annotation Id="683" Type="SkillTool" StartNode="1307" EndNode="1310">
 <Feature>
   <Name className="java.lang.String">string</Name>
-  <Value className="java.lang.String">MongoDB</Value>
+  <Value className="java.lang.String">SQL</Value>
 </Feature>
 <Feature>
   <Name className="java.lang.String">frequencyOfMention</Name>
@@ -119,13 +76,13 @@ applications from persons of any age for this role. <Node id="2034"/>Database an
 </Feature>
 <Feature>
   <Name className="java.lang.String">kind</Name>
-  <Value className="java.lang.String">product</Value>
+  <Value className="java.lang.String">tool</Value>
 </Feature>
 </Annotation>
-<Annotation Id="909" Type="SkillTool" StartNode="868" EndNode="871">
+<Annotation Id="684" Type="SkillTopic" StartNode="674" EndNode="683">
 <Feature>
   <Name className="java.lang.String">string</Name>
-  <Value className="java.lang.String">SQL</Value>
+  <Value className="java.lang.String">Analytic</Value>
 </Feature>
 <Feature>
   <Name className="java.lang.String">frequencyOfMention</Name>
@@ -133,7 +90,49 @@ applications from persons of any age for this role. <Node id="2034"/>Database an
 </Feature>
 <Feature>
   <Name className="java.lang.String">kind</Name>
-  <Value className="java.lang.String">tool</Value>
+  <Value className="java.lang.String">topic</Value>
+</Feature>
+</Annotation>
+<Annotation Id="685" Type="SkillTopic" StartNode="980" EndNode="989">
+<Feature>
+  <Name className="java.lang.String">string</Name>
+  <Value className="java.lang.String">Marketing</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">frequencyOfMention</Name>
+  <Value className="java.lang.Integer">4</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">topic</Value>
+</Feature>
+</Annotation>
+<Annotation Id="686" Type="SkillTopic" StartNode="1143" EndNode="1161">
+<Feature>
+  <Name className="java.lang.String">string</Name>
+  <Value className="java.lang.String">BusinessAnalytic</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">frequencyOfMention</Name>
+  <Value className="java.lang.Integer">1</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">topic</Value>
+</Feature>
+</Annotation>
+<Annotation Id="687" Type="SkillTopic" StartNode="1208" EndNode="1228">
+<Feature>
+  <Name className="java.lang.String">string</Name>
+  <Value className="java.lang.String">StatisticalAnalysis</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">frequencyOfMention</Name>
+  <Value className="java.lang.Integer">1</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">topic</Value>
 </Feature>
 </Annotation>
 </AnnotationSet>
