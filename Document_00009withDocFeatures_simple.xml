@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<GateDocument version="3">
+<!-- The document's features-->
+
+<GateDocumentFeatures>
+</GateDocumentFeatures>
+<!-- The document content area with serialized nodes -->
+
+<TextWithNodes>
+	<Node id="5"/>South East London, London<Node id="30"/>
+	<Node id="31"/>2015-11-17T15:51:19+00:00<Node id="56"/>
+	Adzuna
+	<Node id="64"/>Blue Pelican<Node id="76"/>
+	<Node id="77"/>Senior Insight Analyst<Node id="99"/>
+	Senior Insight Analyst CLIENT I'm seeking an experienced Senior Customer Insight Analyst, to join this large creative communications agency situated in the heart of trendy North London. It's an integral position, working with one large global retail client delivering in depth analytics and actionable insightful reports. *Stable, large scale business with stable clients *Urgent vacancy, within interview slots available before Christmas - secure a new job now to start next year! *Excellent opportunity for an experienced analyst looking to gain integrated data and <Node id="674"/>analytics<Node id="683"/> exposure - large scale projects and well known agency name This working environment will suit an ambitious, forward thinking, confident individual, not afraid to ask questions or make creative suggestions. You will be working amongst some of the agency industry's lead minds on technology driven <Node id="980"/>marketing<Node id="989"/>, analytics and loyalty marketing. EXPERIENCE REQUIRED/RESPONSIBILITES *Educated to degree level in a numerate subject *Strong experience in marketing or <Node id="1143"/>business analytics<Node id="1161"/> environment *Proven, commercial experience in <Node id="1208"/>statistical analysis<Node id="1228"/>, predictive modelling and segmentation *Must be a strong user of SAS Base and <Node id="1307"/>SQL<Node id="1310"/> for data manipulation and statistical modelling development, plus significant experience with Excel including programming elements *Competent present of actionable insights, and experience of working with large customer data sets (into the millions) POSITION - Senior Insight Analyst LOCATION - North London SALARY - ?50k - ?55k plus excellent benefits TO APPLY For further information or to apply please contact: Kate McDermott Managing Consultant - Blue Pelican Marketing For more vacancies which may suit your needs, please visit us at
+	<Node id="1853"/>
+</TextWithNodes>
+<!-- The default annotation set -->
+
+<AnnotationSet>
+</AnnotationSet>
+
+<!-- Named annotation set -->
+
+<AnnotationSet Name="GATE Document_00009">
+<Annotation Id="679" Type="datePosted" StartNode="31" EndNode="56">
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">datePosted</Value>
+</Feature>
+</Annotation>
+<Annotation Id="680" Type="Location" StartNode="5" EndNode="30">
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">jobLocation</Value>
+</Feature>
+</Annotation>
+<Annotation Id="681" Type="jobRole" StartNode="77" EndNode="99">
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">jobTitle</Value>
+</Feature>
+</Annotation>
+<Annotation Id="682" Type="Organization" StartNode="64" EndNode="76">
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">hiringOrganization</Value>
+</Feature>
+</Annotation>
+<Annotation Id="683" Type="SkillTool" StartNode="1307" EndNode="1310">
+<Feature>
+  <Name className="java.lang.String">string</Name>
+  <Value className="java.lang.String">SQL</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">frequencyOfMention</Name>
+  <Value className="java.lang.Integer">1</Value>
+</Feature>
+</Annotation>
+<Annotation Id="684" Type="SkillTopic" StartNode="674" EndNode="683">
+<Feature>
+  <Name className="java.lang.String">string</Name>
+  <Value className="java.lang.String">Analytic</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">frequencyOfMention</Name>
+  <Value className="java.lang.Integer">3</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">topic</Value>
+</Feature>
+</Annotation>
+<Annotation Id="685" Type="SkillTopic" StartNode="980" EndNode="989">
+<Feature>
+  <Name className="java.lang.String">string</Name>
+  <Value className="java.lang.String">Marketing</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">frequencyOfMention</Name>
+  <Value className="java.lang.Integer">4</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">kind</Name>
+  <Value className="java.lang.String">topic</Value>
+</Feature>
+</Annotation>
+</AnnotationSet>
+
+</GateDocument>
