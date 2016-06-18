@@ -200,32 +200,24 @@
 		<variable name="freq" select="ancestor::Annotation/Feature[Name='frequencyOfMention']/Value"/>
 		<call-template name="krextor:create-resource">
 			<with-param name="type" select="'&saro;Tool'"/>
+                        <with-param name="related-via-properties" select="'&saro;requiresSkill'" tunnel="yes"/>
 			<with-param name="properties">
 				<krextor:property uri="&saro;frequencyOfMention" value="{$freq}" datatype="&xsd;integer"/>
 			</with-param>
 		</call-template>
-		
-		<call-template name="krextor:add-uri-property">
-			<with-param name="property" select="'&saro;requiresSkill'"/>
-		</call-template>
-		
 	</template>
-		
+
 		<template match="//Annotation[@Type='SkillTopic']/Feature[Name='string']/Value" mode="krextor:main">
 		<variable name="id" select="ancestor::Annotation[1]/@Id"/>
 		<variable name="freq" select="ancestor::Annotation/Feature[Name='frequencyOfMention']/Value"/>
 		<call-template name="krextor:create-resource">
 			<with-param name="type" select="'&saro;Topic'"/>
+                        <with-param name="related-via-properties" select="'&saro;requiresSkill'" tunnel="yes"/>
 			<with-param name="properties">
 				<krextor:property uri="&saro;frequencyOfMention" value="{$freq}" datatype="&xsd;integer"/>
 			</with-param>
 		</call-template>
-		
-		<call-template name="krextor:add-uri-property">
-			<with-param name="property" select="'&saro;requiresSkill'"/>
-		</call-template>
-		
-	</template>	
+	</template>
 		
 	
 		
