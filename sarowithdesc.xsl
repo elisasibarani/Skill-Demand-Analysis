@@ -170,13 +170,10 @@
 
 		<call-template name="krextor:create-resource">
 			<with-param name="type" select="'&saro;Product'"/>
+                        <with-param name="related-via-properties" select="'&saro;requiresSkill'" tunnel="yes"/>
 			<with-param name="properties">
 				<krextor:property uri="&saro;frequencyOfMention" value="{$freq}" datatype="&xsd;integer"/>
 			</with-param>
-		</call-template>	
-		
-		<call-template name="krextor:add-uri-property">
-			<with-param name="property" select="'&saro;requiresSkill'"/>
 		</call-template>
 	</template>
 
