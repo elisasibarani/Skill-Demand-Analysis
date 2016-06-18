@@ -7,6 +7,7 @@
 	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
 	<!ENTITY so "http://schema.org/">
 	<!ENTITY saro "http://www.semanticweb.org/elisasibarani/ontologies/2016/0/untitled-ontology-51#">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
 ]>
 
 <stylesheet xmlns="http://www.w3.org/1999/XSL/Transform"
@@ -184,7 +185,7 @@
 		<call-template name="krextor:create-resource">
 			<with-param name="type" select="'&saro;Product'"/>
 			<with-param name="properties">
-				<krextor:property uri="&saro;frequencyOfMention" value="{$freq}"/>
+				<krextor:property uri="&saro;frequencyOfMention" value="{$freq}" datatype="&xsd;integer"/>
 			</with-param>
 		</call-template>	
 		
@@ -201,7 +202,7 @@
 		<call-template name="krextor:create-resource">
 			<with-param name="type" select="'&saro;Product'"/>
 			<with-param name="properties">
-				<krextor:property uri="&saro;frequencyOfMention" value="{$freq1}"/>
+				<krextor:property uri="&saro;frequencyOfMention" value="{$freq1}" datatype="&xsd;integer"/>
 			</with-param>
 		</call-template>	
 	</template>
@@ -215,7 +216,7 @@
 		<call-template name="krextor:create-resource">
 			<with-param name="type" select="'&saro;Tool'"/>
 			<with-param name="properties">
-				<krextor:property uri="&saro;frequencyOfMention" value="{$freq}"/>
+				<krextor:property uri="&saro;frequencyOfMention" value="{$freq}" datatype="&xsd;integer"/>
 			</with-param>
 		</call-template>
 		
@@ -231,7 +232,7 @@
 		<call-template name="krextor:create-resource">
 			<with-param name="type" select="'&saro;Topic'"/>
 			<with-param name="properties">
-				<krextor:property uri="&saro;frequencyOfMention" value="{$freq}"/>
+				<krextor:property uri="&saro;frequencyOfMention" value="{$freq}" datatype="&xsd;integer"/>
 			</with-param>
 		</call-template>
 		
