@@ -90,10 +90,27 @@
 
 
 -->
-	<template match="//AnnotationSet/@Name" mode="krextor:main">
-		<call-template name="krextor:create-resource">
-            <with-param name="type" select="'&saro;jobPosting'"/>
-		</call-template>	
+	<template match="GateDocument" mode="krextor:main">
+            <apply-templates select="AnnotationSet[@Name]" mode="krextor:main"/>
+        </template>
+
+        <template match="//AnnotationSet[@Name]" mode="krextor-genuri:saro">
+            <value-of 
+                  select="xs:anyURI(concat('http://www.edsa-project.eu/jobposting/', encode-for-uri(@Name), '/'))"/>
+        </template>
+        
+	<variable name="startrole1" select="//AnnotationSet/Annotation[@Type='jobRole']/@StartNode"/>
+	<template match="//AnnotationSet[@Name]" mode="krextor:main">
+	        <call-template name="krextor:create-resource">
+                <with-param
+                  name="krextor:base-uri"
+                  select="xs:anyURI(concat('http://www.edsa-project.eu/jobposting/', encode-for-uri(@Name), '/'))"
+                  as="xs:anyURI"
+                  tunnel="yes"/>
+            <with-param name="type" select="'&saro;JobPosting'"/>
+            <with-param name="process-next" select="../TextWithNodes"/>
+           
+	        </call-template>
 	</template>
 
 
