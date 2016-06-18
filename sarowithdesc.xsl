@@ -37,7 +37,7 @@
 		<param name="base-uri"/>
 	  
 		<apply-templates select="$node" mode="krextor-genuri:saro">
-			<with-param name="saro-base-uri" select="$base-uri"/>
+			<!-- <with-param name="saro-base-uri" select="$base-uri"/> -->
 		</apply-templates>
 	  
 	</template>
