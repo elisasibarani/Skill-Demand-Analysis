@@ -37,11 +37,21 @@
 		<param name="base-uri"/>
 	  
 		<apply-templates select="$node" mode="krextor-genuri:saro">
-			<with-param name="saro-base-uri" select="$base-uri"/>
+			<!-- <with-param name="saro-base-uri" select="$base-uri"/> -->
 		</apply-templates>
 	  
 	</template>
 	
+        <template match="/" mode="krextor:main">
+            <apply-imports>
+                <!-- TODO check whether it's OK to assume that we are always interested in the first named annotation set -->
+                <with-param
+                  name="krextor:base-uri"
+                  select="xs:anyURI(concat('http://www.edsa-project.eu/jobposting/', encode-for-uri(/GateDocument/AnnotationSet/@Name[1]), '/'))"
+                  as="xs:anyURI"
+                  tunnel="yes"/>
+            </apply-imports>
+        </template>
 
 	
 
