@@ -4,6 +4,9 @@ List of problems:
 
 The Expected Output:
 a. <http://www.edsa-project.eu/jobposting/GATE%20Document_00009>
+
+   --> if ...00009/ (with a trailing slash) is also acceptable, that's easier to handle.
+
 b. <http://www.edsa-project.eu/jobposting/GATE%20Document_00009/SQL>
 
 The Actual Output:
