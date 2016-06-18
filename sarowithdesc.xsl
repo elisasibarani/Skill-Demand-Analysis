@@ -143,10 +143,8 @@
 	<template match="text()[preceding-sibling::Node[@id=$startrole1]][1]" mode="krextor:main">
 		<call-template name="krextor:create-resource">
 			<with-param name="type" select="'&saro;JobRole'"/>
-		</call-template>
-		
-		<call-template name="krextor:add-uri-property">
-			<with-param name="property" select="'&saro;describes'"/>
+                        <with-param name="related-via-properties" select="'&saro;describes'" tunnel="yes"/>
+                        <with-param name="process-next" select="//Annotation"/>
 		</call-template>
 	</template>
 
