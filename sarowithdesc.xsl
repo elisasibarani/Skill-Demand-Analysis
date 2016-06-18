@@ -135,9 +135,10 @@
 			<with-param name="datatype" select="'&xsd;dateTime'"/>
 		</call-template>
 	</template>
-	
-	<variable name="startrole1" select="//AnnotationSet/Annotation[@Type='jobRole']/@StartNode"/>
-		
+
+
+
+
 
 	<template match="text()[preceding-sibling::Node[@id=$startrole1]][1]" mode="krextor:main">
 		<call-template name="krextor:create-resource">
