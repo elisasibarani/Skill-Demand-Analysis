@@ -99,7 +99,6 @@
                   select="xs:anyURI(concat('http://www.edsa-project.eu/jobposting/', encode-for-uri(@Name), '/'))"/>
         </template>
         
-	<variable name="startrole1" select="//AnnotationSet/Annotation[@Type='jobRole']/@StartNode"/>
 	<template match="//AnnotationSet[@Name]" mode="krextor:main">
 	        <call-template name="krextor:create-resource">
                 <with-param
@@ -140,6 +139,7 @@
 
 
 
+	<variable name="startrole1" select="//AnnotationSet/Annotation[@Type='jobRole']/@StartNode"/>
 	<template match="text()[preceding-sibling::Node[@id=$startrole1]][1]" mode="krextor:main">
 		<call-template name="krextor:create-resource">
 			<with-param name="type" select="'&saro;JobRole'"/>
