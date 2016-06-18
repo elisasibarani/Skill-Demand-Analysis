@@ -115,6 +115,7 @@
 	<template match="text()[preceding-sibling::Node[@id=$startdate]][1]" mode="krextor:main">
 		<call-template name="krextor:add-literal-property">
 			<with-param name="property" select="'&so;datePosted'"/>
+			<with-param name="datatype" select="'&xsd;dateTime'"/>
 		</call-template>
 	</template>
 	
